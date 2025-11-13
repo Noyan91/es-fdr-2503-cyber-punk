@@ -1,0 +1,22 @@
+# Initialize a new Git repository in this folder
+git init          # start tracking this folder with Git
+
+# Add all files to the first commit
+git add .        
+
+# Create the initial commit
+git commit -m "Initial commit"
+
+
+# -----------------------------------------
+# Configure Git (first time only)
+# -----------------------------------------
+
+# Set your Git username
+git config --global user.name "Your Name"
+
+# Set your Git email
+git config --global user.email "you@example.com"
+
+# Set the default branch name to 'main'
+git config --global init.defaultBranch main
