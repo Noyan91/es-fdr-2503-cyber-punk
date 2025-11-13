@@ -1,15 +1,20 @@
-# Initialize a new Git repository in this folder
-git init          # start tracking this folder with Git
+# -----------------------------------------
+# Initialize a New Git Repository
+# -----------------------------------------
+
+# Start tracking this folder with Git
+git init          
 
 # Add all files to the first commit
-git add .        
+git add .
 
 # Create the initial commit
 git commit -m "Initial commit"
 
 
+
 # -----------------------------------------
-# Configure Git (first time only)
+# Configure Git (First Time Only)
 # -----------------------------------------
 
 # Set your Git username
@@ -20,3 +25,50 @@ git config --global user.email "you@example.com"
 
 # Set the default branch name to 'main'
 git config --global init.defaultBranch main
+
+
+
+# -----------------------------------------
+# Check Git Configuration
+# -----------------------------------------
+
+# Check current username
+git config user.name
+
+# Check current email
+git config user.email
+
+
+
+# -----------------------------------------
+# View Commit History
+# -----------------------------------------
+
+# View full commit log
+git log
+
+# Press 'q' to exit log view
+
+
+
+# -----------------------------------------
+# View Commit History (One Line Format)
+# -----------------------------------------
+
+git log --oneline
+
+
+
+# -----------------------------------------
+# Switch to a Specific Commit or Branch
+# -----------------------------------------
+
+# Checkout a specific commit (use commit hash)
+git checkout <commit-hash>
+
+# Switch back to main branch
+git checkout main
+
+
+
+

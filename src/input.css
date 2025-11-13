@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2.813rem;
+}
+
+@theme {
+
+    /*==== Color ====*/
+    --color-white: #FFFFFF;
+    --color-light-gray: #DDDDDD;
+    --color-gray: #CBCBCB;
+    --color-orange-dark: #E03609;
+    --color-yellow-gold: #F0B71F;
+    --color-black: #010101;
+    --color-gray-light: #C4C4C4;
+
+    /*==== Font Family ====*/
+    --font-orbitron: "Orbitron", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    
+
+
+    /*==== Breakpoints ====*/
+  --breakpoint-*: initial;
+  --breakpoint-xsm: 32rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 95rem;
+}
+
+
+@layer base {
+    body {
+        @apply font-montserrat bg-black text-white;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-orbitron:);
+        color: var(--color-orange-dark);
+    }
+}
+
+@layer components {
+    .linear_btn {
+        @apply bg-linear-to-r from-yellow-gold to-orange-dark text-[17px] font-semibold px-5 py-3 rounded-xl;
+    }
+
+    .after_bottom {
+        @apply after:absolute after:h-px after:w-full after:bg-linear-to-r after:from-yellow-gold after:to-orange-dark after:bottom-0 after:left-0;
+    }
+
+}
