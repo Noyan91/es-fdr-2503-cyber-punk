@@ -18,6 +18,7 @@
     --color-yellow-gold: #F0B71F;
     --color-black: #010101;
     --color-gray-light: #C4C4C4;
+    --color-white-4: rgba(255, 255, 255, 0.04);
 
     /*==== Font Family ====*/
     --font-orbitron: "Orbitron", sans-serif;
@@ -44,6 +45,9 @@
         font-family: var(--font-orbitron:);
         color: var(--color-orange-dark);
     }
+    p {
+        @apply text-[18px] text-[#DDDDDD] leading-[32px] -tracking-[0.2px]
+    }
 }
 
 @layer components {
@@ -54,5 +58,37 @@
     .after_bottom {
         @apply after:absolute after:h-px after:w-full after:bg-linear-to-r after:from-yellow-gold after:to-orange-dark after:bottom-0 after:left-0;
     }
+    .after_left {
+        @apply before:absolute before:h-full before:w-px before:bg-linear-to-b before:from-yellow-gold before:to-orange-dark before:top-0 before:left-0;
+    }
+    .after_right {
+        @apply after:absolute after:h-full after:w-px after:bg-linear-to-t after:from-yellow-gold after:to-orange-dark after:top-0 after:right-0;
+    }
+
+    .blur_bg {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(25.7px);
+    }
+
+    .linear_color_text {
+        background: linear-gradient(270deg, #F0B71F 0%, #E03609 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    .linear_color_button {
+        background: linear-gradient(270deg, #F0B71F 0%, #E03609 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        border: 1px solid #E03609;
+        border-radius: 12px;
+        padding: 12px 20px;
+    }
 
 }
+
+
+
