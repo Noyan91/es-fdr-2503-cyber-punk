@@ -5,56 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 19 Cyber Punk Project</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body class="h-full relative">
     <div class="container absolute -z-1 h-full bg-transparent left-1/2 top-0 -translate-x-1/2 after_left after_right"></div>
     <nav class="relative after_bottom">
-        <div class="py-[50px] container relative">
-            <span class="absolute -left-[30px] -bottom-[30px] z-10"><img src="media/image/Union.png" alt="image"></span>
-            <span class="absolute -right-[30px] -bottom-[30px] z-10"><img src="media/image/Union (1).png" alt="image"></span>
+        <div class="py-4 lg:py-[50px] container relative">
+            <span class="hidden md:inline-block absolute -left-[30px] -bottom-[30px] z-10"><img src="media/image/Union.png" alt="image"></span>
+            <span class="hidden md:inline-block absolute -right-[30px] -bottom-[30px] z-10"><img src="media/image/Union (1).png" alt="image"></span>
             <div class="flex items-center gap-5 justify-between">
                 <div>
                     <img src="media/image/Logo.png" alt="Logo">
                 </div>
-                <ul class="flex justify-center gap-12 items-center">
+                <ul class="hidden md:flex justify-center md:gap-5 lg:gap-8 items-center">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pages</a></li>
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="">
+                <div class="hidden md:block">
                     <button class="linear_btn">Get started free</button>
+                </div>
+                <div class="md:hidden">
+                    <button class="linear_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
 
     <!--====== Hero Section Started ======-->
-    <section class="pb-[130px] relative after_bottom">
+    <section class=" pb-[50px] xl:pb-[130px] relative after_bottom">
         <div class="py-[50px] container relative">
             <span class="absolute -left-[30px] -bottom-40 z-10"><img src="media/image/Union.png" alt="image"></span>
             <span class="absolute -right-[30px] -bottom-40 z-10"><img src="media/image/Union (1).png" alt="image"></span>
-            <h1 class="font-orbitron font-bold text-[180px] uppercase text-white text-center pt-10">Cyber Punk</h1>
-            <div class="flex justify-center -mt-[180px] relative">
-                <div class="absolute top-[40%] left-0">
+            <h1 class="font-orbitron font-bold text-[60px] xl:text-[100px] 2xl:text-[180px] uppercase text-white text-center pt-10">Cyber Punk</h1>
+            <div class="flex justify-center xl:-mt-[180px] relative">
+                <div class="absolute md:top-[40%] md:left-0">
                     <h3 class="text-white text-[24px] pb-4">Stories & Lore</h3>
                     <p class="max-w-[300px]">Dive into compelling narratives set in a dystopian future.</p>
-                    <img class="absolute top-[13px] -right-[146px]" src="media/image/Group 751.png" alt="">
+                    <img class="hidden xl:inline-block absolute top-[13px] -right-[146px]" src="media/image/Group 751.png" alt="img">
                 </div>
                 <img class="w-full max-w-[862px]" src="media/image/Cyber Punk.png" alt="image">
-                <div class="max-w-[280px] absolute top-[40%] right-0 text-right">
-                    <h3 class="text-[35px] pb-5 text-white uppercase">Events and <span class="font-bold">Updates</span></h3>
+                <div class="max-w-[280px] absolute md:top-[40%] md:right-0 lg:text-right">
+                    <h3 class="text-[35px] pb-14 text-white uppercase">Events and <span class="font-bold">Updates</span></h3>
                     <p class="pb-5">Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
                     <button class="linear_btn"><a href="#">Read More</a></button>
                 </div>
             </div>
-            <div class="relative z-10 flex gap-24 justify-between items-center">
-                <div class="max-w-[655px] rounded-[20px] blur_bg px-[34px] py-8 -mt-[50px] border border-orange-dark grid grid-cols-[200px_1fr] gap-5">
+            <div class="relative z-10 flex flex-col lg:gap-24 lg:justify-between lg:items-center md:flex-row flex-wrap">
+                <div class="xl:max-w-[655px] rounded-[20px] blur_bg px-[34px] py-8 mt-10 md:-mt-[50px] border border-orange-dark grid lg:grid-cols-[200px_1fr] grid-cols-1 gap-6 lg:gap-11">
                     <div class="overflow-hidden rounded-[20px]">
-                        <img src="media/image/Experience the Future.png" alt="image">
+                        <img class="size-full md:w-[200px] md:h-[260px]" src="media/image/Experience the Future.png" alt="image">
                     </div>
                     <div>
-                        <strong class="linear_color_text text-[57px]">76,285K+</strong>
+                        <strong class="linear_color_text text-[36px] md:text-[57px]">76,285K+</strong>
                         <h3 class="py-3 text-[22px] text-white font-semibold">Experience the Future</h3>
                         <p>Explore the high-tech, low-life world where the lines between</p>
                     </div>
@@ -63,7 +71,7 @@
                     <h3 class="text-[35px] pb-5 text-white uppercase">Art and <span class="font-bold">Design</span></h3>
                     <p class="pb-5">Feast your eyes on stunning visuals and concept art that bring the cyberpunk</p>
                 </div>
-                <div class="max-w-[655px] rounded-[20px] blur_bg px-[34px] py-8 -mt-[50px] border border-orange-dark grid grid-cols-[200px_1fr] gap-5">
+                <div class="max-w-[655px] rounded-[20px] blur_bg px-[34px] py-8 lg:-mt-[50px] border border-orange-dark grid grid-cols-[200px_1fr] gap-5">
                     <div>
                         <strong class="linear_color_text text-[57px]">17+</strong>
                         <h3 class="py-3 text-[22px] text-white font-semibold">Years of Experiences</p>
@@ -78,37 +86,40 @@
     <!--====== Where Neon Started ======-->
     <section class="pt-[70px] pb-[120px] relative after_bottom">
         <div class="container">
-            <div class="grid grid-cols-2 gap-10 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                 <div class="">
-                    <h3 class="text-white text-[57px] font-bold pb-[50px] font-orbitron">Where <span class="linear_color_text">Neon Dreams & Digital</span> Nightmares Converge.</h3>
+                    <h3 class="text-white text-[40px] lg:text-[57px] font-bold pb-[50px] font-orbitron">Where <span class="linear_color_text">Neon Dreams & Digital</span> Nightmares Converge.</h3>
                     <p>A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
-                    <div class="grid grid-cols-3 gap-[70px] pt-[69px]">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-[70px] pt-[69px]">
                         <div>
-                            <h4 class="text-[47px] font-semibold linear_color_text">89,2K+</h4>
+                            <h4 class="text-[30px] xl:text-[47px] font-semibold linear_color_text">89,2K+</h4>
                             <p>Discover the Future</p>
                         </div>
                         <div>
-                            <h4 class="text-[47px] font-semibold linear_color_text">7001+</h4>
+                            <h4 class="text-[30px] xl:text-[47px] font-semibold linear_color_text">7001+</h4>
                             <p>Discover the Future</p>
                         </div>
                         <div>
-                            <h4 class="text-[47px] font-semibold linear_color_text">3,124+</h4>
+                            <h4 class="text-[30px] xl:text-[47px] font-semibold linear_color_text">3,124+</h4>
                             <p>Discover the Future</p>
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div class="hidden lg:block">
                     <img src="media/image/Neon Dreams.png" alt="image">
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-10 items-center pt-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center pt-10">
                 <div class="">
                     <img src="media/image/Unveil.png" alt="image">
                 </div>
                 <div class="">
-                    <h3 class="text-white text-[57px] font-bold pb-[50px] font-orbitron">Unveil <span class="linear_color_text"> the Secrets of the</span> Cybernetic Underworld</h3>
+                    <h3 class="text-white text-[40px] lg:text-[57px] font-bold pb-[50px] font-orbitron">Unveil <span class="linear_color_text"> the Secrets of the</span> Cybernetic Underworld</h3>
                     <p class="pb-[50px]">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. </p>
-                     <div class="w-full rounded-[20px] blur_bg px-[34px] py-8 border border-yellow-gold grid grid-cols-[200px_1fr] gap-5">
+                    <div class="lg:hidden">
+                    <img src="media/image/Neon Dreams.png" alt="image">
+                </div>
+                     <div class="w-full rounded-[20px] blur_bg px-[34px] py-8 border border-yellow-gold grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-5">
                     <div class="overflow-hidden rounded-[20px]">
                         <img src="media/image/Revolution.png" alt="image">
                     </div>
@@ -129,9 +140,9 @@
     <section class="relative after_bottom">
         <div class="container">
             <div class="pt-[170px] pb-[110px]" style="background: url('media/image/Greetings\ bg.png') no-repeat center/cover;">
-                <div class="grid grid-cols-[7fr_5fr] gap-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-[7fr_5fr] gap-6">
                     <div>
-                    <h3 class="text-white text-[68px] font-bold pb-20 font-orbitron">Greetings! Dive into the Cybernetic Universe</h3>
+                    <h3 class="text-white text-5xl lg:text-[68px] font-bold pb-20 font-orbitron">Greetings! Dive into the Cybernetic Universe</h3>
                     <p class="pb-[50px]">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. </p>
                     </div>
                 <div>
@@ -172,10 +183,10 @@
     <section class="py-[150px] relative after_bottom">
         <div class="container">
             <div class="pb-[50px]">
-                <h3 class="text-white text-[57px] font-bold pb-[50px] font-orbitron text-center">Dive into the Cybernetic <span class="block  linear_color_text">Universe</span></h3>
+                <h3 class="text-white text-[40px] lg:text-[57px] font-bold pb-[50px] font-orbitron text-center">Dive into the Cybernetic <span class="block  linear_color_text">Universe</span></h3>
                 <p class="max-w-[936px] text-center mx-auto">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. </p>
             </div>
-            <div class="grid grid-cols-3 gap-[50px] items-center">
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-[50px] items-center">
                 <div class="grid grid-cols-[81px_1fr] gap-[50px] items-start">
                     <div class="overflow-hidden rounded-[11px] border border-yellow-gold flex items-center justify-between p-[18px]">
                         <img src="media/icons/mitre.png" alt="image">
@@ -213,12 +224,12 @@
     <section>
         <div class="container">
             <div>
-                <div class="grid grid-cols-2 gap-10 items-center pt-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center pt-10">
                 <div class="">
                     <img src="media/image/Portal.png" alt="image">
                 </div>
                 <div class="">
-                    <h3 class="text-white text-[57px] font-bold pb-[50px] font-orbitron">Your <span class="linear_color_text"> Portal to a Gritty, </span>Tech-Driven Future.</h3>
+                    <h3 class="text-white text-[40px] lg:text-[57px] font-bold pb-[50px] font-orbitron">Your <span class="linear_color_text"> Portal to a Gritty, </span>Tech-Driven Future.</h3>
                     <p class="pb-[50px]">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. </p>
                     <div class="flex gap-6">
                         <a class="linear_btn" href="#">Read More</a>
@@ -231,17 +242,16 @@
     </section>
     <!--====== Your Portal Section End ======-->
 
-
     <!--====== FAQ Section Start ======-->
-    <section class="py-[150px] relative after_bottom">
+    <section class="py-20 lg:py-[150px] relative after_bottom">
         <div class="py-[50px] container relative">
             <span class="absolute -left-[30px] -bottom-45 z-10"><img src="media/image/Union.png" alt="image"></span>
             <span class="absolute -right-[30px] -bottom-45 z-10"><img src="media/image/Union (1).png" alt="image"></span>
             <div class="pb-[50px]">
-                <h3 class="text-white text-[57px] font-bold pb-[50px] font-orbitron text-center">Frequently Asked <span class="block  linear_color_text">Questions</span></h3>
+                <h3 class="text-white text-[40px] lg:text-[57px] font-bold pb-[50px] font-orbitron text-center">Frequently Asked <span class="block  linear_color_text">Questions</span></h3>
                 <p class="max-w-[936px] text-center mx-auto">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. </p>
             </div>
-            <div class="grid grid-cols-2 gap-[50px] items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-[50px] items-center">
                 <div class="grid grid-cols-[81px_1fr] gap-[50px] items-start">
                     <div class="linear_color_text font-orbitron text-[48px] font-bold">
                         01.
@@ -288,7 +298,7 @@
 
     <section>
         <div class="container">
-            <div class="flex justify-between gap-[149px] py-[150px]">
+            <div class="flex justify-between  flex-wrap xl:flex-nowrap gap-[30px] xl:gap-[149px] py-[150px]">
                 <div>
                 <h4 class="text-[24px] text-white pb-5">Cyber.AI - Cyber Punk Website</h4>
                 <p>Explore the high-tech, low-life world where the lines between humanity </p>
@@ -296,29 +306,29 @@
             <div>
                 <h5 class="text-[20px] text-white pb-5">Information</h5>
                 <ul>
-                    <li><a href="#">Press Centre</a></li>
-                    <li><a href="#">Our Blog</a></li>
-                    <li><a href="#">Term and Condition</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Press Centre</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Our Blog</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Term and Condition</a></li>
                 </ul>
             </div>
             <div>
                 <h5 class="text-[20px] text-white pb-5">Menu</h5>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="whitespace-nowrap">About</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Services</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Blog</a></li>
                 </ul>
             </div>
             <div>
                 <h5 class="text-[20px] text-white pb-5">Contact</h5>
                 <ul>
-                    <li><a href="#">Phone: +123 456 789</a></li>
-                    <li><a href="#">Email: @example.com</a></li>
-                    <li><a href="#">Address Line 01</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Phone: +123 456 789</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Email: @example.com</a></li>
+                    <li><a href="#" class="whitespace-nowrap">Address Line 01</a></li>
                 </ul>
             </div>
             </div>
-            <div class="flex justify-between items-center pb-[50px]">
+            <div class="flex justify-between flex-wrap xl:flex-nowrap gap-[50px] items-center pb-[50px]">
                 <p>Cyber.AI - Cyber Punk 2024. All rights reserved.</p>
                 <ul class="flex items-center gap-4">
                     <li><a href="#">Terms</a></li>

@@ -1,0 +1,9 @@
+@media (max-width: 767.98px) {
+    .after_bottom::after {
+        display: none;
+    }
+    
+    .after_left, 
+    .after_right {
+        display: none;
+    }
